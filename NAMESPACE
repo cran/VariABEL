@@ -1,0 +1,9 @@
+useDynLib(VariABEL)
+
+
+export(
+#	var.meta.gwaa,
+	var_test_gwaa#,
+	#test_databel
+       )
+
