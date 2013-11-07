@@ -756,8 +756,9 @@ bool snp_filter(snp_var_data* snp,  std::ofstream & warnings_file, bool exclude_
 
 for(int i=0 ; i<GENO_TYPES_NUM ; i++)
 	{
-  if(snp->COUNTS[i]<=0) continue;
+  if(snp->COUNTS[i]<=0) {continue;}
 	if(unsigned(snp->COUNTS[i]) < threshold)
+	  {
 		if(exclude_whole_snp)
 			{
 			if(do_warnings_output)
@@ -776,7 +777,7 @@ for(int i=0 ; i<GENO_TYPES_NUM ; i++)
 			snp->MEAN[i] = NA_value;
 			snp->COUNTS[i] = 0;
 			}	
-	
+	  }
 	}
 
 return true;

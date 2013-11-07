@@ -166,7 +166,8 @@ void gtps_container::set(unsigned id_position, unsigned snp_position, char data)
 
 		
 //static const char clear_info_for_person[]={63, 207, 243, 252};
-static const char clear_info_for_person[]={'&#255;', '&#207;', '&#243;', '&#252;'};
+//static const char clear_info_for_person[]={'&#255;', '&#207;', '&#243;', '&#252;'};
+static const char clear_info_for_person[]={char(63), char(207), char(243), char(252)};
 
 get_our_byte_number_and_local_person_number(id_position, snp_position);
 

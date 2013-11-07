@@ -1,6 +1,6 @@
 \name{var_test_gwaa}
 \alias{var_test_gwaa}
-\title{Function performs compariosn of genotypic variances.}
+\title{Function performs comparison of genotypic variances.}
 \description{The presence of a significant difference of genotypic variances
   points to possible presence of interaction between a tested SNP and a
   factor (or set of factors). This functions tests for that.
@@ -21,14 +21,14 @@
 \item{genodata_info}{The file with SNP information (name,
   position). Used if genotype data is a DatABEL object.}
 
-\item{testname}{Name of the variance heterogeneity test to perform. svlm
-  (for imputed genotype data), Levene, and Bartlett test are supported.}
+\item{testname}{Name of the variance heterogeneity test to perform. "svlm"
+  (for imputed genotype data), "Levene", and "Bartlett" test are supported. Note that "svlm" test only additive genetic model and the parameter analysis_type is ignored.}
 
 \item{analysis_type}{Type of analysis to perform. \code{AAvsABvsBB} -
-  additive model where the B allele additively increases risk,
-  \code{AAvsABandBB} - group AA tested agains AB and BB,
+  each henotypic group is testes against other two, 
+  \code{AAvsABandBB} - group AA tested against AB and BB,
   \code{ABvsAAandBB} - AB against AA and BB, \code{BBvsAAandAB} - BB
-  against AA and AB. Only available for typed SNPs.}
+  against AA and AB. Only available for typed SNPs. Note that the input parameter analysis_type is ignored if testname="svlm"}
 }
 
 \details{
@@ -43,7 +43,7 @@ covariate.
 }
 
 \value{
-The ouput is a \code{data.frame} object. The table contains the chi^2 of
+The output is a \code{data.frame} object. The table contains the chi^2 of
 the variance heterogeneity test (the name is \code{chisq}) the effects
 and standard errors of all covariates included into the regression
 model, main SNP effect (the names are \code{snp_eff} and

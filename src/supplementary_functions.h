@@ -60,7 +60,7 @@ const std::string sd_value_name = "SD";
 
 
 
-class snp_var_data;
+struct snp_var_data;
 typedef std::map<std::string, snp_var_data*> Snp_store_type; //use std::string as key because for some reason it doesn't want to work with const char*
 
 
