@@ -124,7 +124,7 @@ if(class(genodata) == "snp.data")
 		if(file.exists(genodata_info))
 			{
 			print("reading genotype's info...")
-			genodata_info_df <- read.table(genodata_info, strings=F, header=T)
+			genodata_info_df <- read.table(genodata_info, stringsAsFactors=F, header=T)
 #			print(c(dim(genodata_info_df)[1], gtNcol))
 			if(dim(genodata_info_df)[1] != gtNcol) 
 				{

@@ -2,10 +2,10 @@ Package: VariABEL
 Type: Package
 Title: Testing of genotypic variance heterogeneity to detect
         potentially interacting SNP.
-Version: 0.9-0
-Date: 2011-12-02
+Version: 0.9-1
+Date: 2013-11-07
 Author: Maksim Struchalin
-Maintainer: Maksim Struchalin <m.struchalin@erasmusmc.nl>
+Maintainer: Maksim Struchalin <m.v.struchalin@mail.ru>
 Depends: R (>= 2.13.0)
 Suggests: GenABEL, DatABEL
 Description: Presence of interaction between a SNP and another SNP (or another factor) can result 
@@ -13,6 +13,7 @@ Description: Presence of interaction between a SNP and another SNP (or another f
 	Detecting such heterogeneity gives prior knowledge for constructing a genetic model 
 	underlying complex trait.
 License: GPL (>= 2)
-Packaged: 2011-12-07 15:58:16 UTC; maksim
+Packaged: 2013-11-07 12:14:16 UTC; maksim
+NeedsCompilation: yes
 Repository: CRAN
-Date/Publication: 2011-12-07 16:03:44
+Date/Publication: 2013-11-07 13:23:59

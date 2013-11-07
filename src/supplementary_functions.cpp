@@ -711,7 +711,7 @@ double my_var(my_small_vector * vec)
 	double sum = 0;
 	double mean = my_mean(vec);
 
-	error("error: var: sample has not more than one element");
+	if(vec->number <2) error("error: var: Phenotypic data contains less than two subjects.");
 
 
 	for(unsigned i=0; i<vec->number ; i++)

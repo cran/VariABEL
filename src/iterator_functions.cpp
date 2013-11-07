@@ -1,4 +1,4 @@
-#include "Rstaff.h"
+#include "Rstuff.h"
 #include "iterator_functions.h"
 #include "var_homogeneity_tests.h"
 #include <R.h>
@@ -36,7 +36,7 @@ extern "C" {
 		//Rprintf("%f\n", mydata[0]);
 		for (register unsigned int i = 0; i < size; i++) {
 
-			if (!isnan(mydata[i])) {
+			if (!ISNAN(mydata[i])) {
 				sumtotal += mydata[i];
 			} else if (!dropNA) {
 				return(0/zero);

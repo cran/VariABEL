@@ -1,6 +1,6 @@
 .onLoad <- function(lib, pkg) {
-	VariABEL.version <- "0.9-0"
-	cat("VariABEL v.",VariABEL.version,"(December 02, 2011) loaded\n")
+	VariABEL.version <- "0.9-1"
+#	packageStartupMessage("VariABEL v.",VariABEL.version,"(November 07, 2013) loaded\n")
 	
 	# check for updates and news
 	address <- c(
@@ -32,24 +32,24 @@
 				endnews <- grep("</messagetoall>",tolower(fulltext))
 				if (length(strnews)>0 && length(endnews)>0) 
 					if ((endnews-1) >= (strnews+1)) {
-						cat(fulltext[(strnews+1):(endnews-1)],sep="\n")
+#						packageStartupMessage(fulltext[(strnews+1):(endnews-1)],sep="\n")
 					}
 				# compare versions
 				a <- strsplit(a,"")[[1]]
 				ver <- a[grep("[0-9]",a)]
 				ver <- paste(ver[1],".",ver[2],"-",ver[3],sep="")
 				if (VariABEL.version != ver) {
-					cat(  "\nInstalled VariABEL version (",VariABEL.version,") is not the same as stable\n",
-							"version available from CRAN (",ver,"). Unless used intentionally,\n",
-							"consider updating to the latest CRAN version. For that, use\n",
-							"'install.packages(\"VariABEL\")', or ask your system administrator\n",
-							"to update the package.\n\n",sep="")
+#					packageStartupMessage(  "\nInstalled VariABEL version (",VariABEL.version,") is not the same as stable\n",
+#							"version available from CRAN (",ver,"). Unless used intentionally,\n",
+#							"consider updating to the latest CRAN version. For that, use\n",
+#							"'install.packages(\"VariABEL\")', or ask your system administrator\n",
+#							"to update the package.\n\n",sep="")
 					# check for new-version news
 					strnews <- grep("<vanews>",tolower(fulltext))
 					endnews <- grep("</vanews>",tolower(fulltext))
 					if (length(strnews)>0 && length(endnews)>0) 
 						if ((endnews-1) >= (strnews+1)) {
-							cat(fulltext[(strnews+1):(endnews-1)],sep="\n")
+#							packageStartupMessage(fulltext[(strnews+1):(endnews-1)],sep="\n")
 						}
 				}
 			}

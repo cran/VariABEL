@@ -1,4 +1,4 @@
-#include "Rstaff.h"
+#include "Rstuff.h"
 #include <Rdefines.h>
 
 #include "FilteredMatrix.h"

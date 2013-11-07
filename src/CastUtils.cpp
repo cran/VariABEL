@@ -184,9 +184,11 @@ bool checkNan(void *data, int dataType){
     	case INT:
     	    return (*(int*) data) == INT_NAN;
     	case FLOAT:
-    	    return isnan(*(float*) data);
+//	  return std::isnan(*(float*) data);
+	  return ISNAN(*(float*) data);
     	case DOUBLE:
-    	    return isnan(*(double*) data);
+//	  return std::isnan(*(double*)data);
+	  return ISNAN(*(double*)data);
     	case UNSIGNED_CHAR:
     	    return (*(unsigned char*) data) == UNSIGNED_CHAR_NAN;
     	case SIGNED_CHAR:
