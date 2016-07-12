@@ -1,4 +1,6 @@
 #include "Rstuff.h"
+// this included Rdefines.h, so
+#undef length
 #include "iterator_functions.h"
 #include "var_homogeneity_tests.h"
 #include <R.h>

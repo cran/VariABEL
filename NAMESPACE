@@ -7,3 +7,8 @@ export(
 	#test_databel
        )
 
+importFrom("methods", "is")
+importFrom("stats", "lm", "model.matrix")
+importFrom("utils", "read.table")
+
+

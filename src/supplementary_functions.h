@@ -26,12 +26,14 @@
 #include <fstream>
 #include <sstream>
 #include <stdio.h>
-#include <Rinternals.h>
-#include <R.h>
 #include <fstream>
 #include <algorithm>
 
 #include <vector>
+
+#include <R.h>
+#include <Rinternals.h>
+#undef length
 
 
 

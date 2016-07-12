@@ -1,5 +1,5 @@
-a2d3c6f56ab1536fafdfe99a90d83053 *DESCRIPTION
-101a2ccdf8888ae5fdc87709b9c58fc8 *NAMESPACE
+91edff2dd5296588707d255c15f08915 *DESCRIPTION
+43ed3ce7239e3b202b44990a231d2b58 *NAMESPACE
 5884d0f0bfab96fa73584589da5314fe *R/var.meta.gwaa.R
 5aac97cf2475fecfeb4eff063f2eb90e *R/var_test_gwaa.R
 5578aceafaadf8a8485ff24f1d04249b *R/zzz.R
@@ -41,12 +41,12 @@ d20eb49829da4cf30b5e42e544ebb61f *src/gtps_container.h
 9cf2c1f26db7f7c79314a757b12f6f77 *src/inverse_variance_metaanalysis.h
 4499582614b4c616b2fc7e680e1d133d *src/iterator.cpp
 f3e9a18658770c9628dfb960a2d15174 *src/iterator.h
-4a3ca7315d5481c5e3ac0791ecb50785 *src/iterator_functions.cpp
+3522e7cee716d88d402da2d6666c65ea *src/iterator_functions.cpp
 96c757ff778a886624e1ac227c525a79 *src/iterator_functions.h
 344546459716c573d76235ab561b5dff *src/linear_regression.cpp
 b93658e8baa1268ffece21bf90c97ec4 *src/linear_regression.h
 d1b49ec300c3e3691ae05b0c39438225 *src/supplementary_functions.cpp
-022f344430a400c60dc1ab3827fec707 *src/supplementary_functions.h
+4e99b4939de09cea2523500af481671f *src/supplementary_functions.h
 cff34546cc9a73abf0bafc9e60523a3c *src/var_homogeneity_test_C.cpp
 ad71b3f70e1ea7d2b1776e42b5d32407 *src/var_homogeneity_tests.cpp
 2c63b77b417c347357a91445664c7e03 *src/var_homogeneity_tests.h
